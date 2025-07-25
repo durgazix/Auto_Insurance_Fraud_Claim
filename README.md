@@ -56,3 +56,32 @@ project/
 ```bash
 git clone https://github.com/yourusername/auto-insurance-fraud.git
 cd auto-insurance-fraud
+
+python -m venv venv
+source venv/bin/activate  # or venv\Scripts\activate on Windows
+
+Install Requirements
+pip install -r requirements.txt
+
+Run Flask Backend
+python app.py
+
+Run Streamlit Frontend
+streamlit run streamlit_app.py
+
+Example API Payload
+POST /predict
+Content-Type: application/json
+
+{
+  "Age_Insured": 45,
+  "Gender": "male",
+  "Occupation": "engineer",
+  "Accident_Type": "Rear Collision",
+  ...
+}
+
+
+---
+
+Would you like this turned into a downloadable file? Or do you want it tailored for **HuggingFace Spaces**, **Render**, or **GitHub Pages** deployment as well?
