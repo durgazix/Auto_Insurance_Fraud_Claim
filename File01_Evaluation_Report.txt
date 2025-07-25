@@ -1,0 +1,12 @@
+✅ Accuracy: 0.8842
+✅ ROC AUC Score: 0.9600
+
+📊 Classification Report:
+              precision    recall  f1-score   support
+
+   Not Fraud       0.88      0.99      0.93     30120
+       Fraud       0.93      0.57      0.71      9880
+
+    accuracy                           0.88     40000
+   macro avg       0.90      0.78      0.82     40000
+weighted avg       0.89      0.88      0.87     40000
