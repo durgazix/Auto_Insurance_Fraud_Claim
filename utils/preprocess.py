@@ -13,12 +13,13 @@ def preprocess(df):
     # Load the correct feature structure
     expected_cols = joblib.load("model/feature_columns.pkl")
 
-    # Add missing columns with 0
-    for col in expected_cols:
-        if col not in df.columns:
-            df[col] = 0
+    # Add missing columns with 0 (optimized)
+    missing_cols = set(expected_cols) - set(df.columns)
+    if missing_cols:
+        missing_df = pd.DataFrame(0, index=df.index, columns=list(missing_cols))
+        df = pd.concat([df, missing_df], axis=1)
 
-    # Drop extra columns
+    # Drop extra columns and reorder
     df = df[expected_cols]
     
     return df
