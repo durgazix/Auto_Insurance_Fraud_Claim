@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🚨 AI Insurance Fraud Detection System
 
 A comprehensive Machine Learning and Data Analytics platform for detecting insurance fraud using advanced AI techniques.
@@ -168,4 +169,3 @@ This project is for educational and demonstration purposes.
 ---
 
 **Developed with ❤️ using AI, ML, and Data Analytics**
-
